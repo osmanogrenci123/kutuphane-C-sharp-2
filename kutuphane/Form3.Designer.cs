@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             tableLayoutPanel2 = new TableLayoutPanel();
             button3 = new Button();
             button8 = new Button();
@@ -60,11 +61,13 @@
             richTextBox6 = new RichTextBox();
             richTextBox7 = new RichTextBox();
             label_tur = new Label();
+            pictureBox2 = new PictureBox();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridView_kitaplar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -431,11 +434,23 @@
             label_tur.TabIndex = 34;
             label_tur.Text = "Type";
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.profil;
+            pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
+            pictureBox2.Location = new Point(607, 8);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(65, 69);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 24;
+            pictureBox2.TabStop = false;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox2);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -456,6 +471,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -500,5 +516,6 @@
         private Label label_kitap_adi;
         private Label label_yayin_evi;
         private Label label_basim_yili;
+        private PictureBox pictureBox2;
     }
 }
