@@ -149,8 +149,8 @@ namespace kutuphane
             {
                 MessageBox.Show("Admin Login succesfull", "Warning",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-                form3 form3 = new form3();
-                form3.Show();
+                Form3 Form3 = new Form3();
+                Form3.Show();
                 this.Hide();
             }
             else
